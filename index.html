@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas da Matemática 3D</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Atlas interativo em 3D que cobre todo o vídeo “TODA A MATEMÁTICA Explicada em 25 minutos”, com links para cada trecho.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+
+<a class="skip" href="#introducao">Pular para o conteúdo</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#topo" aria-label="Voltar ao topo">Atlas<span>da Matemática</span></a>
+    <nav class="chips" id="chapter-chips" aria-label="Capítulos"></nav>
+    <a class="now" id="now-link" href="https://youtu.be/obKEn1KkMUI" target="_blank" rel="noopener">
+      <span class="now-t" id="now-time">▶ 00:00</span><span class="now-h" id="now-title">Abrir o vídeo</span>
+    </a>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Atlas interativo · 11 capítulos · 27:15 de vídeo</p>
+        <h1>Toda a matemática, em um mapa que você pode girar.</h1>
+        <p class="lede">Cada região deste atlas é um capítulo do vídeo <cite>“TODA A MATEMÁTICA Explicada em 25 minutos”</cite>, do canal Ciência Mapeada. Gire os modelos 3D, mexa nos controles e use os marcadores <span class="vlink-demo">▶ mm:ss</span> para abrir o vídeo no trecho exato de cada explicação.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#introducao">Começar a viagem</a>
+          <a class="btn" href="https://youtu.be/obKEn1KkMUI" target="_blank" rel="noopener">▶ Assistir ao vídeo completo</a>
+        </div>
+      </div>
+      <figure class="hero-stage-wrap">
+        <div class="stage hero-stage" id="hero-stage" aria-label="Constelação 3D com os dez temas do vídeo. Clique em um tema para ir até ele."></div>
+        <figcaption>Clique em um sólido para viajar até o capítulo. Arraste para girar.</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <div class="legend" aria-labelledby="legend-title">
+        <h2 class="legend-title" id="legend-title">Legenda do mapa</h2>
+        <dl class="legend-list">
+          <div><dt style="--h:210">Aritmética</dt><dd>Estudo dos números e das operações fundamentais: soma, subtração, multiplicação e divisão.</dd></div>
+          <div><dt style="--h:268">Álgebra</dt><dd>Generaliza a aritmética com letras e expressões para resolver equações e modelar situações.</dd></div>
+          <div><dt style="--h:152">Geometria</dt><dd>Analisa formas, tamanhos, posições e propriedades do espaço. A trigonometria mora aqui.</dd></div>
+          <div><dt style="--h:2">Estatística e probabilidade</dt><dd>Interpreta dados e prevê eventos a partir de padrões e incertezas.</dd></div>
+          <div><dt style="--h:322">Cálculo</dt><dd>Estuda mudanças e acumulações com limites, derivadas e integrais.</dd></div>
+        </dl>
+        <p class="legend-src">Definições da descrição do vídeo. <a class="vlink" href="https://youtu.be/obKEn1KkMUI?t=80" target="_blank" rel="noopener" title="Abrir o vídeo em 01:20"><span class="vlink-t" aria-hidden="true">▶ 01:20</span><span class="vlink-h">“Vamos passear em cada tópico”: o roteiro do vídeo</span></a></p>
+      </div>
+
+      <div class="timeline-wrap">
+        <p class="timeline-label">Linha do tempo do vídeo · clique em um trecho para ir ao capítulo</p>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="introducao" style="--h:28">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">01</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 1 · 00:00 – 01:43</p>
+          <h2>Introdução: de onde veio a matemática</h2>
+          <p class="ch-lede">Dedos, pedras, impostos e terras para dividir. Gire o globo e veja onde cada ideia nasceu antes de se espalhar até a Europa e virar o cálculo.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=0" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 00:00</span><span class="vlink-h">Assistir à introdução</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="aritmetica" style="--h:210">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">02</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 2 · 01:43 – 06:44</p>
+          <h2>Aritmética</h2>
+          <p class="ch-lede">Trabalhar com números: dos naturais aos complexos, do troco do doce ao MMC dos ovos, de somas repetidas a potências e porcentagens.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=103" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 01:43</span><span class="vlink-h">Assistir ao capítulo de aritmética</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="algebra" style="--h:268">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">03</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 3 · 06:44 – 09:10</p>
+          <h2>Álgebra</h2>
+          <p class="ch-lede">Letras e símbolos no lugar dos números. Veja o quadrado da soma nascer de áreas e aprenda por que banana não se soma com maçã.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=404" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 06:44</span><span class="vlink-h">Assistir ao capítulo de álgebra</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="geometria" style="--h:152">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">04</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 4 · 09:10 – 12:33</p>
+          <h2>Geometria</h2>
+          <p class="ch-lede">Geo é terra, metria é medida. Triângulos de todos os tipos, a soma de 180°, a área, o teorema de Pitágoras e a lei dos cossenos.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=550" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 09:10</span><span class="vlink-h">Assistir ao capítulo de geometria</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="trigonometria" style="--h:188">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">05</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 5 · 12:33 – 14:39</p>
+          <h2>Trigonometria</h2>
+          <p class="ch-lede">Três, ângulos e medidas. Seno, cosseno e tangente no círculo de raio 1, e a identidade sen² + cos² = 1.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=753" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 12:33</span><span class="vlink-h">Assistir ao capítulo de trigonometria</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="estatistica" style="--h:2">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">06</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 6 · 14:39 – 18:15</p>
+          <h2>Estatística e probabilidade</h2>
+          <p class="ch-lede">Dados que ajudam a decidir: moda, média, mediana e desvio padrão. Depois, moedas, potes de bolas, Mega-Sena e átomos atravessando paredes.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=879" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 14:39</span><span class="vlink-h">Assistir ao capítulo de estatística</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <aside class="sponsor" id="patrocinio" aria-label="Trecho patrocinado do vídeo">
+    <div class="wrap sponsor-in">
+      <p><b>Intervalo · 18:15 – 19:46.</b> O vídeo pausa a matemática para um trecho patrocinado pela Brilliant, uma plataforma de cursos interativos (matemática, vetores, álgebra, geometria, cálculo e análise de dados). Este atlas não tem relação com o patrocinador.</p>
+      <a class="vlink" href="https://youtu.be/obKEn1KkMUI?t=1095" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 18:15</span><span class="vlink-h">Ver o trecho patrocinado</span></a>
+    </div>
+  </aside>
+
+  <section class="chapter" id="funcoes" style="--h:36">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">07</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 7 · 19:46 – 21:57</p>
+          <h2>Funções</h2>
+          <p class="ch-lede">Uma máquina que recebe um número, faz uma operação e devolve outro. Funções afim, quadrática e exponencial modelam pressão, preço de carro e bactérias.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=1186" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 19:46</span><span class="vlink-h">Assistir ao capítulo de funções</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="limites" style="--h:238">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">08</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 8 · 21:57 – 24:22</p>
+          <h2>Limites</h2>
+          <p class="ch-lede">O que importa é a tendência. Polígonos com cada vez mais lados se aproximam da área do círculo, e a tangente perto de π/2 mostra quando um limite não existe.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=1317" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 21:57</span><span class="vlink-h">Assistir ao capítulo de limites</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="derivada" style="--h:322">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">09</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 9 · 24:22 – 26:06</p>
+          <h2>Derivada</h2>
+          <p class="ch-lede">A taxa de variação em qualquer ponto. Pilote um carro, encolha o Δt e veja a reta secante virar a reta tangente.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=1462" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 24:22</span><span class="vlink-h">Assistir ao capítulo de derivada</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="chapter" id="integral" style="--h:98">
+    <div class="wrap">
+      <header class="ch-head">
+        <span class="ch-num" aria-hidden="true">10</span>
+        <div class="ch-meta">
+          <p class="eyebrow">Capítulo 10 · 26:06 – 27:15</p>
+          <h2>Integral</h2>
+          <p class="ch-lede">Somar infinitas fatias finíssimas. Encha uma piscina a partir da vazão e veja a área sob a curva virar volume.</p>
+          <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=1566" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 26:06</span><span class="vlink-h">Assistir ao capítulo de integral</span></a>
+        </div>
+      </header>
+      <div class="ch-body" data-mount></div>
+    </div>
+  </section>
+
+  <section class="outro" id="fim">
+    <div class="wrap outro-in">
+      <p class="eyebrow">Fim do mapa · 26:53</p>
+      <p class="outro-quote">“Se for pôr limites em seu conhecimento, faça-o tender para o infinito.”</p>
+      <p class="outro-src">Fala final do autor, que avisa: tudo isso é “o resumo do resumo”, feito para despertar o interesse pela matemática.</p>
+      <div class="hero-actions">
+        <a class="vlink big" href="https://youtu.be/obKEn1KkMUI?t=1613" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 26:53</span><span class="vlink-h">Ver o encerramento do vídeo</span></a>
+        <a class="btn" href="#topo">Voltar ao mapa</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <section aria-labelledby="errata-title">
+      <h2 id="errata-title">Errata publicada pelo autor</h2>
+      <p>Na trigonometria o vídeo mostra sen²θ + cos²θ = R². As projeções do raio R nos eixos são R·cosθ e R·senθ, então Pitágoras dá (R·cosθ)² + (R·senθ)² = R², o que resulta em <span class="math">sen²θ + cos²θ = 1</span>.</p>
+      <a class="vlink" href="https://youtu.be/obKEn1KkMUI?t=853" target="_blank" rel="noopener"><span class="vlink-t" aria-hidden="true">▶ 14:13</span><span class="vlink-h">Trecho da identidade fundamental</span></a>
+    </section>
+    <section aria-labelledby="sobre-title">
+      <h2 id="sobre-title">Sobre este atlas</h2>
+      <p>Material de estudo independente baseado no vídeo do canal Ciência Mapeada no YouTube. Todo o texto foi reescrito a partir da transcrição, e cada marcador ▶ abre o vídeo original no segundo indicado.</p>
+      <p class="muted">Modelos 3D feitos com three.js. Os controles respondem a mouse, toque e teclado.</p>
+    </section>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

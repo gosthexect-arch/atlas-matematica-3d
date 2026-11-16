@@ -1,0 +1,6 @@
+# material de referência local: transcrição e descrição do vídeo (conteúdo de terceiros)
+ref/transcricao.txt
+ref/descricao.txt
+__pycache__/
+.DS_Store
+Thumbs.db

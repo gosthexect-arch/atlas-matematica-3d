@@ -6,6 +6,8 @@ Site interativo em 3D que percorre todo o conteúdo do vídeo
 Cada capítulo do vídeo virou uma região do atlas, com modelos 3D que você gira, controles que mudam os números ao vivo
 e marcadores **▶ mm:ss** que abrem o vídeo no segundo exato de cada explicação.
 
+**Abrir online, sem instalar nada:** https://gosthexect-arch.github.io/atlas-matematica-3d/
+
 | # | Capítulo | O que tem para mexer |
 |---|----------|----------------------|
 | 1 | Introdução | Globo com a origem de cada ideia; campo do Nilo dividido em lotes |
